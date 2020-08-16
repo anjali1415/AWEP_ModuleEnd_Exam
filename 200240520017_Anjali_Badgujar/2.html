@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="2.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main-cont {
+            background: url("image.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-cont" style="display:flex;flex-direction: column; height:100vh">
+        <form style="display:flex;justify-content: center;flex:0.3">
+            <div id="contents" style="display:flex; ; flex-direction: column; 
+            padding:2vh; border:2px solid black;">
+                <div style="margin-top:20px">
+                    <label for="username">Username</label>
+                    <input type="text" id="userid" Required>
+                </div>
+                <div style="margin-top:20px">
+                    <label for="password">Password</label>
+                    <input type="password" id="passid" required>
+                </div>
+                <div style="margin-top:20px">
+                    <label for="email">Email</label>
+                    <input type="email" id="emailid" pattern="[a-z|0-9]([@].)" required>
+                </div>
+                <div>
+                    <button style="font-size:15px; margin-top:10px;" type=" submit"
+                        onclick="HandleInputs()">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div id="commentbox1" style=" flex:0.2; margin:10px;font-size:25px;">
+            <div id="ref1" style="background: crimson;"></div>
+        </div>
+        <div id="commentbox2" style="flex:0.2; margin:10px;font-size:25px">
+            <div id="ref2" style="background:purple;"></div>
+        </div>
+        <div id="commentbox3" style=" flex:0.2; margin:10px;font-size:25px">
+            <div id="ref3" style="background:cyan;"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
